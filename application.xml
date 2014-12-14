@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<application xmlns="http://ns.adobe.com/air/application/3.9">
+  <id>com.efs.quran</id>
+  <versionNumber>1.0.0</versionNumber>
+  <versionLabel/>
+  <filename>Read Tamil Quran</filename>
+  <description/>
+<!-- To localize the description, use the following format for the description element.<description><text xml:lang="en">English App description goes here</text><text xml:lang="fr">French App description goes here</text><text xml:lang="ja">Japanese App description goes here</text></description>-->
+  <name>Read Tamil Quran</name>
+<!-- To localize the name, use the following format for the name element.<name><text xml:lang="en">English App name goes here</text><text xml:lang="fr">French App name goes here</text><text xml:lang="ja">Japanese App name goes here</text></name>-->
+  <copyright/>
+  <initialWindow>
+    <content>quran.swf</content>
+    <systemChrome>standard</systemChrome>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <fullScreen>true</fullScreen>
+    <renderMode>gpu</renderMode>
+    <autoOrients>false</autoOrients>
+    <maximizable>true</maximizable>
+    <minimizable>true</minimizable>
+    <resizable>true</resizable>
+	  <width>480</width>
+	  <height>800</height>
+    <aspectRatio>portrait</aspectRatio>
+  </initialWindow>
+  <icon>
+    <image72x72>assets/76x76.png</image72x72>
+    <image48x48>assets/48x48.png</image48x48>
+    <image36x36>assets/36x36.png</image36x36>
+  </icon>
+  <customUpdateUI>true</customUpdateUI>
+  <allowBrowserInvocation>true</allowBrowserInvocation>
+  <android>
+    <manifestAdditions>
+      <![CDATA[<manifest>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<application android:enabled="true" android:hardwareAccelerated="true"/>
+<uses-sdk android:minSdkVersion="8" android:targetSdkVersion="10"/>
+</manifest>]]>
+    </manifestAdditions>
+  </android>
+  <supportedLanguages>en</supportedLanguages>
+</application>
